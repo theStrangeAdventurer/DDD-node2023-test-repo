@@ -12,11 +12,13 @@
     "node": "14 || 16 || 18"
   },
   "dependencies": {
-    "@types/node": "^20.10.3",
-    "@types/pino": "^7.0.5",
     "fastify": "^4.24.3",
     "pg": "^8.8.0",
     "pino": "^8.16.2",
     "ws": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "@types/pino": "^7.0.5"
   }
 }
