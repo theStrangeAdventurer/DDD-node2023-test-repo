@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-2022-2023",
+  "version": "9.0.0",
+  "description": "How to use DDD, SOLID, GRASP and GoF in JavaScript and Node.js",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "node main"
+  },
+  "engines": {
+    "node": "14 || 16 || 18"
+  },
+  "dependencies": {
+    "@types/node": "^20.10.3",
+    "@types/pino": "^7.0.5",
+    "fastify": "^4.24.3",
+    "pg": "^8.8.0",
+    "pino": "^8.16.2",
+    "ws": "^8.12.0"
+  }
+}
