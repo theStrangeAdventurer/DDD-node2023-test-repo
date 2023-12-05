@@ -15,23 +15,23 @@ class PinoLogger {
   }
 
   write(type = 'info', s) {
-    logger[type](s);
+    this.logger[type](s);
   }
 
   log(...args) {
-    logger.info(...args);
+    this.logger.info(...args);
   }
 
   dir(...args) {
-    logger.info(...args);
+    this.logger.info(...args);
   }
 
   debug(...args) {
-    logger.debug(...args);
+    this.logger.debug(...args);
   }
 
   error(...args) {
-    logger.error(...args);
+    this.logger.error(...args);
   }
 
   system(...args) {

@@ -31,5 +31,5 @@ const routing = {};
   }
 
   staticServer('./static', config.static.port);
-  server(routing, config.api.port);
+  server(routing, { config, logger });
 })();

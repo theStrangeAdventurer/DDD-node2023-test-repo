@@ -1,9 +1,12 @@
 'use strict';
 
-const console = require('../logger.js');
 const { Server } = require('ws');
 
-module.exports = (routing, port) => {
+module.exports = (routing, options) => {
+  const { config, logger: console } = options;
+  const { api } = config;
+  const { port } = api;
+
   const ws = new Server({ port });
 
   ws.on('connection', (connection, req) => {
