@@ -3,8 +3,8 @@
 const fsp = require('node:fs').promises;
 const path = require('node:path');
 const staticServer = require('./static.js');
-const db = require('./db.js');
-const hash = require('./hash.js');
+const db = require('./db');
+const hash = require('./utils/hash');
 const config = require('./.config/app/index.js');
 
 /**

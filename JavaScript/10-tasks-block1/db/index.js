@@ -1,7 +1,7 @@
 'use strict';
 
 const pg = require('pg');
-const dbConfig = require('./.config/db');
+const dbConfig = require('../.config/db');
 const pool = new pg.Pool(dbConfig);
 module.exports = (table) => ({
   async query(sql, args) {
